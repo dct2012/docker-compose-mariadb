@@ -2,10 +2,8 @@ version: "3"
 
 services:
   mariadb:
-    build:
-      context: "_mariadb"
-    container_name: 'database'
-    restart: 'always'
+    image: mariadb
+    restart: always
     ports:
       - "127.0.0.1:3306:3306"
     volumes:
